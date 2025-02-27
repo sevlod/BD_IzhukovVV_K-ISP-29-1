@@ -1,3 +1,33 @@
+# Шпаргалка
+🔹 Работа с таблицами:
+```
+SHOW TABLES;                   # Показать таблицы в текущей БД
+DESCRIBE tablename;            # Показать структуру таблицы
+CREATE TABLE tablename ( );                              # Создать таблицу
+DROP TABLE tablename;           # Удалить таблицу
+ALTER TABLE tablename ADD COLUMN email VARCHAR(100);  # Добавить колонку
+ALTER TABLE tablename DROP COLUMN email;              # Удалить колонку
+```
+🔹 Работа с данными:
+```
+INSERT INTO tablename (name, age) VALUES ('Ivan', 25);   # Вставить данные
+SELECT * FROM tablename;                                 # Вывести все записи
+SELECT name, age FROM tablename WHERE age > 20;         # Фильтр
+UPDATE tablename SET age = 30 WHERE name = 'Ivan';      # Обновить данные
+DELETE FROM tablename WHERE age < 18;                   # Удалить данные
+
+```
+🔹 Работа с базами данных:
+```
+SHOW DATABASES;              # Показать все базы данных
+CREATE DATABASE dbname;      # Создать базу данных
+USE dbname;                  # Переключиться на базу данных
+DROP DATABASE dbname;        # Удалить базу данных
+
+```
+
+# Лабораторная №1
+
     1) Выберите из таблицы orders все заказы:
 `SELECT * FROM orders`
 
