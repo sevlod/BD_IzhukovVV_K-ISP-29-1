@@ -90,6 +90,8 @@ VALUES (6, 4, 8000);
 ```
 
 ![Image](https://i.imgur.com/0bf0tst.png)
+Результат:
+![Image](https://i.imgur.com/qBlO9Ac.png)
 
 ### Задание 167 (Новый товар)
 
@@ -100,6 +102,8 @@ VALUES (7, 'VR-очки', 2, 70000);
 ```
 
 ![Image](https://i.imgur.com/UHw0tp4.png)
+Результат:
+![Image](https://i.imgur.com/xwKzfXM.png)
 
 ### Задание 172 (Ошибка в названии товара)
 
@@ -111,3 +115,5 @@ WHERE name = 'IMAC';
 ```
 
 ![Image](https://i.imgur.com/QDasNBI.png)
+Результат:
+![Image](https://i.imgur.com/AUQ1tPq.png)
