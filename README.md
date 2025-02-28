@@ -7,6 +7,7 @@ CREATE TABLE tablename ( );                              # Создать таб
 DROP TABLE tablename;           # Удалить таблицу
 ALTER TABLE tablename ADD COLUMN email VARCHAR(100);  # Добавить колонку
 ALTER TABLE tablename DROP COLUMN email;              # Удалить колонку
+TRUNCATE TABLE table_name;                          # Удалить все данные из таблицы
 ```
 🔹 Работа с данными:
 ```
