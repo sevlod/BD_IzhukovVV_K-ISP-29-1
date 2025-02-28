@@ -29,7 +29,7 @@ DROP DATABASE dbname;        # Удалить базу данных
 
 # Лабораторная №1
 
-    1) Выберите из таблицы orders все заказы:
+1) Выберите из таблицы orders все заказы:
 `SELECT * FROM orders`
 
 ![Image](https://github.com/user-attachments/assets/bea8389d-893d-4e47-9876-767e55b095ec)
