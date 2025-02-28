@@ -55,3 +55,59 @@ WHERE products_count > 3
 ```
 
 ![Image](https://github.com/user-attachments/assets/d2867f5e-6d7f-4b99-80e0-ea6915370131)
+
+# Лабораторная №2
+### ЗАДАНИЕ 161 (ДОРОГИЕ ЗАКАЗЫ)
+
+1) Выберите из таблицы orders 3 самых дешевых заказа за всё время. Данные нужно отсортировать в порядке убывания цены. Отмененные заказы не учитывайте.
+```
+SELECT * 
+FROM orders
+WHERE status != 'cancelled'
+ORDER BY sum ASC
+LIMIT 3;
+```
+
+![Image](https://i.imgur.com/yAp4RZV.png)
+
+2) Выберите из таблицы orders 2 самых дорогих заказов за всё время. Данные нужно отсортировать в порядке убывания цены. Отмененные заказы не учитывайте.
+```
+SELECT * 
+FROM orders
+WHERE status != 'cancelled'
+ORDER BY sum DESC
+LIMIT 2;
+```
+
+![Image](https://i.imgur.com/NPtDk4U.png)
+
+### Задание 166 (Новый заказ)
+
+3) Добавьте в таблицу orders данные о новом заказе стоимостью 8000 рублей. В заказе 4 товара (products).
+```
+INSERT INTO orders (id, products, sum)
+VALUES (6, 4, 8000);
+```
+
+![Image](https://i.imgur.com/0bf0tst.png)
+
+### Задание 167 (Новый товар)
+
+4) Добавьте в таблицу products новый товар — «VR-очки», стоимостью 70000 рублей в количестве (count) 2 штук.
+```
+INSERT INTO products (id, name, count, price)
+VALUES (7, 'VR-очки', 2, 70000);
+```
+
+![Image](https://i.imgur.com/UHw0tp4.png)
+
+### Задание 172 (Ошибка в названии товара)
+
+5) В таблицу products внесли данные с ошибкой, вместо "PS5" в наименовании написали IMAC. Исправьте ошибку.
+```
+UPDATE products
+SET name = 'PS5'
+WHERE name = 'IMAC';
+```
+
+![Image](https://i.imgur.com/QDasNBI.png)
